@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Learning</string>
+    <string name="api_error_repos">Error Loading Request</string>
 </resources>
