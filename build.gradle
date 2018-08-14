@@ -40,6 +40,7 @@ ext {
     conductorVersion = '2.1.4'
     timberVersion = '4.7.1'
     butterKnifeVersion = '8.8.1'
+    mockitoVersion = '2.10.0'
 }
 
 task clean(type: Delete) {
