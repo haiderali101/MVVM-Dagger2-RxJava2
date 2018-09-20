@@ -10,7 +10,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.learn.mac.learning.test.CustomTestRunner"
     }
     buildTypes {
         release {
@@ -32,7 +32,6 @@ dependencies {
 
     implementation "com.google.dagger:dagger:$daggerVersion"
     implementation "com.google.dagger:dagger-android-support:$daggerVersion"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
@@ -60,6 +59,8 @@ dependencies {
 
     testImplementation "org.mockito:mockito-core:$mockitoVersion"
     testImplementation 'junit:junit:4.12'
+
+    androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
